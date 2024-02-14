@@ -8,8 +8,12 @@ public class Entidade {
         Cliente cliente = new Cliente("jorge", "12345678901", "75999990101", "jorge75999990101@hotmail.com");
         Cliente cliente1 = new Cliente("jorge1", "12345678902", "75999990102", "jorge75999990102@hotmail.com");
         Cliente cliente2 = new Cliente("jorge2", "12345678903", "75999990103", "jorge75999990103@hotmail.com");
-        System.out.printn(reserva);
-    }
 
+        Reserva reserva = new Reserva(cliente, carro, dataInicio, dataFim, valorTotal);
+
+        reserva.calcularValorTotal((dataFim - dataInicio)*Diaria);
+
+        System.out.println(reserva);
+    }
 
 }

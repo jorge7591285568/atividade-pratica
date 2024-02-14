@@ -10,8 +10,8 @@ public class Reserva {
     public Reserva(Cliente cliente, Carro carro, LocalDate dataInicio, LocalDate dataFim, double valorTotal) {
         this.cliente = cliente;
         this.carro = carro;
-        this.dataInicio = dataInicio;
-        this.dataFim = dataFim;
+        dataInicio = dataInicio;
+        dataFim = dataFim;
         this.valorTotal = valorTotal;
     }
     
@@ -36,7 +36,7 @@ public class Reserva {
     }
 
     public void setDataInicio(LocalDate dataInicio) {
-        this.dataInicio = dataInicio;
+        dataInicio = dataInicio;
     }
 
     public LocalDate getDataFim() {
@@ -44,7 +44,7 @@ public class Reserva {
     }
 
     public void setDataFim(LocalDate dataFim) {
-        this.dataFim = dataFim;
+        dataFim = dataFim;
     }
 
     public double getValorTotal() {

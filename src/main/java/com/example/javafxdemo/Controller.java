@@ -38,7 +38,7 @@ public class Controller implements Initializable {
         contas = FXCollections.observableArrayList();
         tbContas.setItems(contas);
     }
-
+/workspaces/atividade-pratica/target
 
     @FXML
     protected void novaConta() {
