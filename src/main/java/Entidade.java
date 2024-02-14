@@ -33,7 +33,7 @@ public class Entidade {
         System.out.println("Data de Fim: " + reserva.getDataFim());
         System.out.println("Cliente: " + reserva.getCliente().getNome());
         System.out.println("Carro: " + reserva.getCarro().getPlaca());
-        System.out.println("Preço Total: " + reserva.getPrecoTotal());
+        System.out.println("Preço Total: " + reserva.getValorTotal());
 
 }
 }
