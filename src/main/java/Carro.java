@@ -86,6 +86,7 @@ public class Carro {
     public void setPassageiro(int passageiro) {
         this.passageiro = passageiro;
     }
+   
 
     @Override
     public String toString() {

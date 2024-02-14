@@ -1,11 +1,11 @@
+import java.time.LocalDate;
+
 public class Reserva {
     private Cliente cliente;
     private Carro carro;
     private LocalDate dataInicio;
     private LocalDate dataFim;
     private double valorTotal;
-
-    
 
     public Reserva(Cliente cliente, Carro carro, LocalDate dataInicio, LocalDate dataFim, double valorTotal) {
         this.cliente = cliente;
@@ -14,7 +14,7 @@ public class Reserva {
         dataFim = dataFim;
         this.valorTotal = valorTotal;
     }
-    
+
     public Cliente getCliente() {
         return cliente;
     }
@@ -55,12 +55,24 @@ public class Reserva {
         this.valorTotal = valorTotal;
     }
 
-
+    
+      /* public void disponivel() {
+            if (this.getCarro() == true) {
+                System.out.println("Modelo: " + this.getModelo());
+                System.out.println("Cor: " + this.getCor());
+                System.out.println("Placa: " + this.getPlaca());
+                System.out.println("O veiculo alugado com sucesso!");
+            } else {
+                System.out.println("O veiculo ja esta alugado! ");
+                System.out.println("Modelo: " + this.getModelo());
+                System.out.println("Cor: " + this.getCor());
+                System.out.println("Placa: " + this.getPlaca());
+            }
+        }*/
     @Override
     public String toString() {
         return "Reserva [cliente=" + cliente + ", carro=" + carro + ", dataInicio=" + dataInicio + ", dataFim="
                 + dataFim + ", valorTotal=" + valorTotal + "]";
     }
-
 
 }
