@@ -1,8 +1,8 @@
 package br.edu.ifba.saj.fwads.controller;
 
-import br.edu.ifba.saj.fwads.Biblioteca;
-import br.edu.ifba.saj.fwads.model.Autor;
-import br.edu.ifba.saj.fwads.model.Livro;
+import br.edu.ifba.saj.fwads.Modelo;
+import br.edu.ifba.saj.fwads.model.Marca;
+import br.edu.ifba.saj.fwads.model.Passageiro;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -25,7 +25,7 @@ import javafx.util.StringConverter;
         private TextField txAno;
     
         @FXML
-        private ChoiceBox<Carro> slCarro;
+        private ChoiceBox<Carro> Carro;
     
         @FXML
         void salvarCarro(ActionEvent event) {
@@ -71,11 +71,11 @@ import javafx.util.StringConverter;
             txPassageiro.setText("");
             txAno.setText("");
             // Todo REVER
-            slCarro.setSelectionModel(null);
+            Carro.setSelectionModel(null);
         }
     
         private void carregarListaAutores() {
-            slCarro.setItems(Carro.listaCarros);
+            Carro.setItems(Carro.listaCarros);
         }
     
     }

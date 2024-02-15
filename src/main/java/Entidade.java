@@ -1,5 +1,7 @@
 package br.edu.ifba.saj.fwads.controller;
 
+
+import java.time.LocalDate;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -12,9 +14,9 @@ import javafx.scene.control.Alert.AlertType;
 public class Entidade {
 
     public static void main(String[] args) {
-        Carro carro = new Carro("wxy4f34", "Fiat", "Beetle", 2020, "Vermelho", 30, sim);
-        Carro carro1 = new Carro("wxy4f32", "Volks", "gol", 2000, "Amarelo", 20, sim);
-        Carro carro2 = new Carro("wxy4f33", "Hunday", "hylux", 2010, "Branca", 50, sim);
+        Carro carro = new Carro("wxy4z56","volks","Gol",2000,"amarelo",20.0, "sim",5);
+        Carro carro1 = new Carro("wxy4z58","Hunday","hilux",2020,"branca",50.0, "sim",5);
+        Carro carro2 = new Carro("wxy4z60","fiat","Mobi",2010,"verde",30.0, "sim",4);
         
 
         Cliente cliente = new Cliente("jorge", "12345678901", "75999990101", "jorge75999990101@hotmail.com");
@@ -22,7 +24,7 @@ public class Entidade {
         Cliente cliente2 = new Cliente("jorge2", "12345678903", "75999990103", "jorge75999990103@hotmail.com");
 
        
-        Reserva reserva = new Reserva("2024-03-01", "2024-03-07", cliente, carro);
+        Reserva reserva = new Reserva(cliente, carro, "10/02/2020","20/02/2020");
 
     
 

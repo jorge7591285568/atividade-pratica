@@ -10,10 +10,11 @@ public class Reserva {
     public Reserva(Cliente cliente, Carro carro, LocalDate dataInicio, LocalDate dataFim, double valorTotal) {
         this.cliente = cliente;
         this.carro = carro;
-        dataInicio = dataInicio;
-        dataFim = dataFim;
+        this.dataInicio = dataInicio;
+        this.dataFim = dataFim;
         this.valorTotal = valorTotal;
     }
+
 
     public Cliente getCliente() {
         return cliente;
@@ -36,7 +37,7 @@ public class Reserva {
     }
 
     public void setDataInicio(LocalDate dataInicio) {
-        dataInicio = dataInicio;
+        this.dataInicio = dataInicio;
     }
 
     public LocalDate getDataFim() {
@@ -44,7 +45,7 @@ public class Reserva {
     }
 
     public void setDataFim(LocalDate dataFim) {
-        dataFim = dataFim;
+        this.dataFim = dataFim;
     }
 
     public double getValorTotal() {
@@ -55,20 +56,21 @@ public class Reserva {
         this.valorTotal = valorTotal;
     }
 
-    
-      /* public void disponivel() {
-            if (this.getCarro() == true) {
-                System.out.println("Modelo: " + this.getModelo());
-                System.out.println("Cor: " + this.getCor());
-                System.out.println("Placa: " + this.getPlaca());
-                System.out.println("O veiculo alugado com sucesso!");
-            } else {
-                System.out.println("O veiculo ja esta alugado! ");
-                System.out.println("Modelo: " + this.getModelo());
-                System.out.println("Cor: " + this.getCor());
-                System.out.println("Placa: " + this.getPlaca());
-            }
-        }*/
+    /*
+     * public void disponivel() {
+     * if (this.getCarro() == true) {
+     * System.out.println("Modelo: " + this.getModelo());
+     * System.out.println("Cor: " + this.getCor());
+     * System.out.println("Placa: " + this.getPlaca());
+     * System.out.println("O veiculo alugado com sucesso!");
+     * } else {
+     * System.out.println("O veiculo ja esta alugado! ");
+     * System.out.println("Modelo: " + this.getModelo());
+     * System.out.println("Cor: " + this.getCor());
+     * System.out.println("Placa: " + this.getPlaca());
+     * }
+     * }
+     */
     @Override
     public String toString() {
         return "Reserva [cliente=" + cliente + ", carro=" + carro + ", dataInicio=" + dataInicio + ", dataFim="
